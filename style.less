@@ -1,0 +1,187 @@
+@primaryColor: purple;
+@hover-color:green;
+@hover-background: pink;
+@boxColor: white;
+
+.border-radius(@radius: 10px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.set-bg-color (@hover-color) when (lightness(@hover-background) >= 50%) { 
+  background-color: pink;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0px;
+    padding: 0px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: @primaryColor;
+	 ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+	li {
+   display: inline;
+   padding: 20px; 
+	}
+}
+#header a {
+    text-decoration: none;
+    color: white;
+}
+#header a:hover {
+    color:lighten(@hover-color, 50%);
+    background-color: @hover-background
+}
+
+#header1 {
+    text-align: center;
+    line-height: 50%;
+}
+#abouttype {
+    text-align: center;
+    line-height: 1%;
+}
+#about {
+    width: 600px;
+    height: 400px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 100px;
+    padding-left: 250px;
+}
+#skills {
+    text-align: center;
+    line-height: 1%;
+}
+#skillslist {
+    width: 600px;
+    height: 100px;
+   -webkit-column-count: 2;
+    -webkit-column-gap: 100px;
+    padding: 50px;
+    padding-left: 250px;
+}
+
+.left {
+    display: inline;
+    float: left;
+    padding-left: 100px;
+    list-style-type: none;
+}
+.right {
+    display:inline;
+    float: right;
+    padding-right: 100px;
+    list-style-type: none;
+}
+#projects {
+    text-align: center;
+    line-height: 1%;
+}
+#projectslist {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+}
+#experienceheader {
+    text-align: center;
+    line-height: 1%;
+}
+#experience1 {
+    padding-left: 100px;
+    line-height: 5%;
+}
+#experience1 h6 {
+    font-size: 14px;
+    font-style: italic;
+    color: @primaryColor;
+    text-indent: 10px;
+    line-height: 5%;
+}
+#experience1 p {
+    text-indent: 10px;
+}
+#experience2 {
+    padding-left: 100px;
+    line-height: 5%;
+}
+#experience2 h6 {
+    font-size: 14px;
+    font-style: italic;
+    color: @primaryColor;
+    text-indent: 10px;
+    line-height: 5%;
+}
+#experience2 p {
+    text-indent: 10px;
+}
+#experience3 {
+    padding-left: 100px;
+    line-height: 5%;
+}
+#experience3 h6 {
+    font-size: 14px;
+    font-style: italic;
+    color: @primaryColor;
+    text-indent: 10px;
+    line-height: 5%;
+}
+#experience3 p {
+    text-indent: 10px;
+}
+#experience4 {
+    padding-left: 100px;
+    line-height: 5%;
+}
+#experience4 h6 {
+    font-size: 14px;
+    font-style: italic;
+    color: @primaryColor;
+    text-indent: 10px;
+    line-height: 5%;
+}
+#experience4 p {
+    text-indent: 10px;
+}
+#educationheader {
+    text-align: center;
+    line-height: 1%;
+}
+#depotu {
+    padding-left: 100px;
+}
+#contactheader {
+    text-align: center;
+    line-height: 1%;
+}
+#contactform {
+    text-align: center;
+    background-color: @primaryColor;
+    width: 500px;
+    height: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    margin: auto; 
+}
+#box form {
+   color: @boxColor
+   font-size: 12px; 
+   padding: 20px;
+}
+footer{
+    text-align: center;
+}
+
